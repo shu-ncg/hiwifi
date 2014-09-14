@@ -53,6 +53,11 @@ app.post('/login', function(req,res) {
 	});
 });
 
+app.get('/logout', function(req,res) {
+	req.session.destroy();
+	res.redirect('/');
+});
+
 app.get('/manage',function(req,res) {
 	if (req.session.userinfo) {
 		var username = req.session.userinfo['username'];
