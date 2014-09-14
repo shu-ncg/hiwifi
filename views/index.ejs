@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="views/libs/bootstrap.css">
+    <link rel="stylesheet" href="views/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="views/libs/bootstrap-theme.css">
+	<style>
+		.form-signin {
+			max-width: 430px;
+			margin: 150px auto;
+			border: 1px solid #aaa;
+			border-radius: 15px;
+			padding: 20px;
+			background-color: #fff;
+		}
+
+		.form-control {
+			margin-top: 20px;
+		}
+
+	</style>
+
+</head>
+<body>
+    <div class="container">
+      <form class="form-signin" role="form" id="login_form" action="/login" method="post">
+        <h2 class="form-signin-heading">Hiwifi</h2>
+        <input type="text" class="form-control required" placeholder="用户名" required="" autofocus="" name="username">
+        <input type="password" class="form-control required" placeholder="密码" required="" name="password">
+        <label class="checkbox">
+          <input type="checkbox" value="remember-me"> 记住我
+        </label>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">登录</button>
+      </form>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+
+	<div class="vimiumReset vimiumHUD" style="right: 150px; opacity: 0; display: none;"></div>
+
+    <script src="views/libs/bootstrap.js"></script>
+    <script src="views/libs/jquery.js"></script>
+</body>
+</html>
