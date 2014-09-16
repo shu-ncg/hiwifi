@@ -108,7 +108,7 @@
 			function get_current_ip() {
 				$.get('/ip').done(function(ip){
 					$('#current_ip').text(ip);
-					setTimeout(get_current_ip, 15000);
+					setTimeout(get_current_ip, 5000);
 				}).fail(function(err){
 					console.error(err);
 					setTimeout(get_current_ip, 30000);
